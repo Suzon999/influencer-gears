@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Luxurious+Roman&family=Poppins&family=Roboto:wght@400;500&family=Source+Sans+Pro&display=swap');
+/*--------------
+ common style
+-------- */
+body{
+    font-family: 'Archivo Black', sans-serif;
+font-family: 'Luxurious Roman', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+}
+.container{
+    
+    width: 1340px;
+    
+    background: #FFFFFF;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    margin-top: 100px;
+}
+/* --------------------
+      start section 
+------------------ */
+.start-item{
+    display: flex;
+}
+.half-width h1{
+    font-size: 70px;
+}
+.half-width img{
+    width: 440px;
+    height: 414px;
+    margin-left: 30px;
+}
+.link-button{
+      background-color: rgb(34, 128, 216);
+      padding: 12px 40px;
+      border-radius: 10px;
+      color: white;
+      font-weight: 500;
+      font-size: 20px;
+}
+/*--------------------------
+     popular products
+ ------------------ */
+ .p-top-title{
+     font-size: 25px;
+     font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+ }
+ .populars{
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     justify-content: center;
+     grid-column-gap:0px;
+     grid-row-gap: 50px;
+     justify-items: center;
+
+ }
+ .popular{
+    height: 476px;
+    width:360px ;
+    box-shadow: 5px 5px 50px rgb(225, 225, 226);
+    padding: 20px;
+    border-radius: 10px;
+    justify-items: center;
+    margin-bottom: 10px;
+ }
+ .popular-bannar{
+     width: 500px;
+     height: 260px;
+ }
+ .popular-title{
+     font-size: 20px;
+ }
+ .popular-info{
+     color: gold;
+ }
+ .info-span{
+     color: rgb(110, 108, 108);
+     margin-left: 10px;
+ }
+ 
+ /*===============
+  practics section
+  -----------------------  */
+.social img{
+    width: 600px;
+    height: auto;
+    margin-right: 30px;
+}
+.social h2{
+    font-size: 55px;
+}
+.social-section{
+    display: flex;
+}
+.join-button{
+    background-color: rgb(34, 128, 216) ;
+
+    padding: 12px 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+ /*---------------------
+    footer 
+ --  -- -------------------- */
+footer{
+        background-color: rgb(29, 28, 28);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+}
+.icons span{
+    margin-left: 20px;
+}
