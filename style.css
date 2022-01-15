@@ -68,6 +68,7 @@ hr{
 
 .start-items{
 display: flex;
+
 }
 .half-width h1{
     font-size: 70px;
@@ -125,9 +126,10 @@ display: flex;
     justify-items: center;
     margin-bottom: 10px;
  }
- .popular-bannar{
+.popular-bannar{
      width: 500px;
      height: 260px;
+     
  }
  .popular-title{
      font-size: 20px;
@@ -190,7 +192,13 @@ footer{
          width: 100%;
      }
      .start-items{
-         background-color: brown;
+         
+         grid-template-columns: repeat(1,1fr);
+     }
+     .nav-items{
+         grid-template-columns:repeat(1,1fr);
+     }
+     .populars{
          grid-template-columns: repeat(1,1fr);
      }
  }
