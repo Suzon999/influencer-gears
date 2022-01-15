@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Luxurious+Roman&family=Poppins&family=Roboto:wght@400;500&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Luxurious+Roman&family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Source+Sans+Pro&display=swap');
 /*--------------
  common style
 -------- */
 body{
     font-family: 'Archivo Black', sans-serif;
-font-family: 'Luxurious Roman', cursive;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-
+    font-family: 'Luxurious Roman', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .container{
     
@@ -24,16 +23,58 @@ main{
     align-items: center;
 }
 hr{
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
+/* ------------------------
+       nav-section 
+---------------- */
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left h2{
+    margin-left: 55px;
+}
+.nav-right{
+    display: flex;
+    align-items: center; 
+}
+.nav-right ul{
+    display: flex;
+}
+.nav-right ul li{
+    list-style: none;
+    margin-left: 50px;
+    
+}
+.nav-right ul li a{
+   font-weight: 900;
+   
+}
+.fa-search{
+    margin-left: 30px;
+}
+.fa-cart-arrow-down{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+   
 /* --------------------
       start section 
 ------------------ */
-.start-item{
-    display: flex;
+
+.start-items{
+display: flex;
 }
 .half-width h1{
     font-size: 70px;
+    margin-top: 20px;
+}
+.half-width p{
+    margin-bottom: 40px;
 }
 .half-width img{
     width: 440px;
@@ -47,6 +88,15 @@ hr{
       color: white;
       font-weight: 500;
       font-size: 20px;
+}
+/*-----------------
+     logo section 
+----------------- */
+.logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 /*--------------------------
      popular products
@@ -101,6 +151,9 @@ hr{
 .social h2{
     font-size: 55px;
 }
+.social p{
+    margin-bottom: 40px;
+}
 .social-section{
     display: flex;
 }
@@ -126,3 +179,18 @@ footer{
 .icons span{
     margin-left: 20px;
 }
+/*-----------------
+   media querise 
+   --------------------- */
+   /*-------------------------
+      mobail devise
+ -------------------- */
+ @media only screen and (max-width:688px) {
+     .container{
+         width: 100%;
+     }
+     .start-items{
+         background-color: brown;
+         grid-template-columns: repeat(1,1fr);
+     }
+ }
